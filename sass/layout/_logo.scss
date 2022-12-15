@@ -1,27 +1,73 @@
 .header {
-  border: 1px solid #ececec;
-  height: 80px;
-  &__web {
-    font-family: "Raleway";
-    font-weight: 700;
-    font-size: 26px;
-    line-height: calc(31 / 26);
-    color: var(--main-color);
-  }
+    
+
+    
+    border: 1px solid #ececec;
+    
+    
+    
+    position: relative;
+    
+
+    
+
+    &__web{
+        
+        color: var(--main-color);
+
+    }
+    
+    &__logo {
+
+        color: black;
+
+        font-weight: 700;
+        font-family: "Raleway";
+        font-size: 26px;
+        line-height: calc(31 / 26);
+
+        
+            margin-left: 5px;
+            display: inline-block;
+            padding-top: 16px;
+            
+
+    }
+
+    &__button{
+        display: inline-block;
+        position: absolute;
+        top: 100%;
+        right: 15px;
+        transform: translateY(-100%);
+        
+        
+       
+        
+        
+        padding: 0;
+        border: none;
+        background-color: transparent;
+    }
+
+
 }
 
-.header__nav {
-  display: flex;
-  align-items: center;
+.header__nav{
+position: relative;
+    
+height: 60px;
 }
 
-.header__logo {
-  margin-right: 90px;
-  font-family: "Raleway";
 
-  font-weight: 700;
-  font-size: 26px;
-  line-height: calc(31 / 26);
-  color: var(--text-color);
-  color: black;
+.header__button .header__open{
+    display: none;
+}
+
+.header__button.is-open .header__open{
+    display: block;
+}
+
+.header__button.is-open .header__close{
+    display: none;
 }

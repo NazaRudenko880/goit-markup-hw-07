@@ -16,11 +16,25 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
+    
     <header class="header">
       <nav class="header__nav container">
         <a class="header__logo text-none" href="!!!!"
           ><span class="header__web">Web</span>Studio</a
         >
+        <button type="button" class="header__button is-open"
+        data-menu-button>
+          <svg width="40px" height="40px" aria-label="переключатель мобильного меню">
+            <use class="header__close" href="./images/symbol-defs (1).svg#icon-close_40px"></use>
+            <use class="header__open" href="./images/symbol-defs (1).svg#icon-menu_40px"></use>
+          </svg>
+        </button>
+
+        
+        <div class="website__container">
+
+
+
         <ul class="website list text-none">
           <li class="website__sections">
             <a class="website__sections--active border-top list" href="!!!!"
@@ -57,6 +71,9 @@
             >
           </li>
         </ul>
+
+
+      </div>
       </nav>
     </header>
 
@@ -138,12 +155,12 @@
 
       <!-- КОМАНДА -->
 
-      <section class="workes">
-        <div class="container">
+      <section class="workes container">
+        <div class="">
           <h2 class="our-team">Наша команда</h2>
           <ul class="workes__team list">
             <li class="workes__frame">
-              <img src="./img/demyanenko.jpg" alt="команда" width="270" />
+              <img src="./img/demyanenko.jpg" alt="команда" width="450" />
               <h3 class="workes__name list">Ігор Дем'яненко</h3>
               <p class="workes__experience">Product Designe</p>
               <ul class="media">
@@ -186,7 +203,7 @@
               </ul>
             </li>
             <li class="workes__frame">
-              <img src="./img/repina.jpg" alt="команда" width="270" />
+              <img src="./img/repina.jpg" alt="команда" width="450" />
               <h3 class="workes__name list">Ольга Рєпіна</h3>
               <p class="workes__experience">Frontend Developer</p>
               <ul class="media">
@@ -229,7 +246,7 @@
               </ul>
             </li>
             <li class="workes__frame">
-              <img src="./img/tarasov.jpg" alt="команда" width="270" />
+              <img src="./img/tarasov.jpg" alt="команда" width="450" />
               <h3 class="workes__name list">Микола Тарасов</h3>
               <p class="workes__experience">Marketing</p>
               <ul class="media">
@@ -272,7 +289,7 @@
               </ul>
             </li>
             <li class="workes__frame">
-              <img src="./img/ermakov.jpg" alt="команда" width="270" />
+              <img src="./img/ermakov.jpg" alt="команда" width="450" />
 
               <h3 class="workes__name list">Михайло Єрмаков</h3>
               <p class="workes__experience">UI Designer</p>
@@ -557,19 +574,9 @@
         </div>
       </div>
     </footer>
+    
     <script src="./js/modal.js"></script>
-    <script>
-      (() => {
-        document
-          .querySelector(".js-speaker-form")
-          .addEventListener("submit", (e) => {
-            e.preventDefault();
-
-            new FormData(e.currentTarget).forEach((value, name) =>
-              console.log(`${name}: ${value}`)
-            );
-          });
-      })();
-    </script>
+    <script src="./js/menu.js"></script>
+   
   </body>
 </html>
