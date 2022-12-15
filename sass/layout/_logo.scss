@@ -1,13 +1,18 @@
 .header {
   border: 1px solid #ececec;
   height: 80px;
+
   &__web {
     font-family: "Raleway";
     font-weight: 700;
     font-size: 26px;
     line-height: calc(31 / 26);
     color: var(--main-color);
+
+    
   }
+
+  
 }
 
 .header__nav {
@@ -24,4 +29,8 @@
   line-height: calc(31 / 26);
   color: var(--text-color);
   color: black;
+
 }
+
+
+

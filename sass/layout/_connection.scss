@@ -6,6 +6,11 @@
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and (min-width:480px){
+    display: none;
+  }
+
   &__maill {
     font-weight: 500;
     font-size: 14px;
